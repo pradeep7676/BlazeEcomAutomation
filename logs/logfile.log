@@ -1,0 +1,26 @@
+ 2024-07-27 20:11:49,483 : INFO : test_login_with_valid_username_password : successfully login and verified the username
+ 2024-07-27 20:11:52,621 : INFO : test_login_with_wrong_username_password : successfully verified by providing wrong username and password
+ 2024-07-27 20:11:54,946 : INFO : test_login_with_wrong_username : successfully verified by providing wrong username
+ 2024-07-27 20:11:58,962 : INFO : test_login_with_wrong_password : successfully verified by providing wrong password
+ 2024-07-27 20:12:01,044 : INFO : test_login_with_empty_fields : successfully verified by providing empty fields
+ 2024-07-27 20:26:57,102 : INFO : test_signup_new_user : successfully signup with new username and password
+ 2024-07-27 20:26:58,733 : INFO : test_signup_negative : successfully verified with empty username and password fields
+ 2024-07-27 20:27:00,903 : INFO : test_signup_using_existing_user : successfully signup
+ 2024-07-27 20:27:15,485 : INFO : test_login_with_valid_username_password : successfully login and verified the username
+ 2024-07-27 20:27:17,634 : INFO : test_login_with_wrong_username_password : successfully verified by providing wrong username and password
+ 2024-07-27 20:27:20,199 : INFO : test_login_with_wrong_username : successfully verified by providing wrong username
+ 2024-07-27 20:27:22,811 : INFO : test_login_with_wrong_password : successfully verified by providing wrong password
+ 2024-07-27 20:27:24,235 : INFO : test_login_with_empty_fields : successfully verified by providing empty fields
+ 2024-07-27 20:27:35,774 : INFO : test_product_display : verified products correctly displayed
+ 2024-07-27 20:27:36,090 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-27 20:27:36,296 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-27 20:27:36,296 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-27 20:27:36,485 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-27 20:27:36,485 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-27 20:27:36,485 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-27 20:27:47,301 : INFO : test_add_product_to_cart : Navigate to the last page by clicking next
+ 2024-07-27 20:28:24,870 : INFO : test_checkout_with_all_details : successfully verified checkout page with all fields
+ 2024-07-27 20:28:27,648 : INFO : test_checkout_empty_field : successfully verified checkout page with empty fields
+ 2024-07-27 20:28:30,963 : INFO : test_checkout_with_name_and_card : successfully verified checkout page with name and card
+ 2024-07-27 20:29:04,277 : INFO : test_checkout_with_empty_cart : successfully verified checkout with empty cart
+ 2024-07-27 20:29:27,431 : INFO : test_logout : successfully verified with empty username and password fields
