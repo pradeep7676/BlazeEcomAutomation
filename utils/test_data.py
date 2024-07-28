@@ -1,8 +1,8 @@
 USER_DATA = {
-    "valid": {"username": "kiran12@12", "password": "123123"},
+    "valid": {"username": "munni1@9912.com", "password": "2291919"},
     "existing": {"existing_username": "wings", "existing_password": "123123"},
-    "invalid": {"username": "invaliduser", "password": "wrongpass"},
-    "specialcha" : {"spcecial_characters_username": "prad1dp@1e1p@23424", "special_char_Password": "1@23@3&%$4567"}
+    "invalid": {"username": "wailiosover", "password": "wails@123123"},
+    "specialcha" : {"spcecial_characters_username": "r@ghu$d@!#$.com", "special_char_Password": "p@a&deep@12#"}
 }
 
 USER_DETAILS = {

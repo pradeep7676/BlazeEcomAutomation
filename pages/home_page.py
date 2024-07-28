@@ -56,3 +56,20 @@ class HomePage(BasePage):
     def go_to_cart(self):
         element = self.driver.find_element(*self.CART_BUTTON)
         element.click()
+
+    def logout_and_assert(driver):
+        home_page = HomePage(driver)
+        home_page.logout()
+
+        login_link_locator = HomePage.LOGIN_LINK
+
+        try:
+            WebDriverWait(driver, 10).until(
+                ec.visibility_of_element_located(login_link_locator)
+            )
+            assert driver.find_element(
+                *login_link_locator).is_displayed(), "Logout failed: login link is not visible"
+            print("Logout successful")
+        except Exception as e:
+            print(f"An unexpected error occurred during logout: {e}")
+            raise

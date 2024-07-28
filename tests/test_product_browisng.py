@@ -44,6 +44,5 @@ class TestProductBrowsing(Utility):
             WebDriverWait(driver, 10).until(
                 EC.visibility_of_all_elements_located(HomePage.CATEGORY_LINK)
             )
-            '''categories = home_page.get_categories()  # Re-fetch categories'''
             assert category_name in "Phones, Laptops,Monitors"
             self.message_logging("Verify that product categories can be navigated successfully.")

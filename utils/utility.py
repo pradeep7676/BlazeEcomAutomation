@@ -1,7 +1,11 @@
 import inspect
 import logging
 from selenium.common.exceptions import NoAlertPresentException
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+
+from pages.home_page import HomePage
+from pages.login_page import LoginPage
 from utils.confiq import Config
 from selenium.webdriver.support import expected_conditions as EC
 

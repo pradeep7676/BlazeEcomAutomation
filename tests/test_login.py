@@ -15,26 +15,10 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 @pytest.mark.usefixtures("driver")
 class TestLogin(Utility):
     def test_valid_login(self, driver):
-        home_page = HomePage(driver)
-        home_page.go_to_login()
-        login_page = LoginPage(driver)
-        login_page.login(USER_DATA["existing"]["existing_username"], USER_DATA["existing"]["existing_password"])
-        user_profile_locator = (By.XPATH, "//a[contains(text(), 'Welcome')]")
-        try:
-            '''Waiting for the user profile element to be visible'''
-            user_profile_element = WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located(user_profile_locator)
-            )
-            user_profile_text = user_profile_element.text
-            assert USER_DATA["valid"]["username"] in user_profile_text
-            print("Login successful")
-        except Exception as e:
-            print(f"An unexpected error occurred: {e}")
-        '''Add verification for successful login'''
-        home_page.logout()
-        self.message_logging("successfully login and verified the username")
+        LoginPage.login_and_assert(driver, USER_DATA["valid"]["username"], USER_DATA["valid"]["password"])
+        self.message_logging("successfully logged in with valid users")
+        driver.refresh()
 
-    '''login with wrong username and password'''
     def test_invalid_username_password(self, driver):
         home_page = HomePage(driver)
         home_page.go_to_login()
@@ -42,9 +26,13 @@ class TestLogin(Utility):
         login_page.login(USER_DATA["invalid"]["username"], USER_DATA["invalid"]["password"])
         '''Adding verification for failed login'''
         alert_text = Utility.handle_alert(driver, action='accept')
-        assert "User does not exist." in alert_text
-        driver.refresh()
+        try:
+            assert "User does not exist." in alert_text, f"User does not exist.' in alert text, but got '{alert_text}'"
+        except AssertionError as e:
+            print(f"Assertion failed: {e}")
+            raise
         self.message_logging("successfully verified by providing invalid username and password")
+        driver.refresh()
 
     '''login with wrong username'''
     def test_invalid_username(self, driver):
@@ -54,8 +42,11 @@ class TestLogin(Utility):
         login_page.login(USER_DATA["invalid"]["username"], USER_DATA["valid"]["password"])
         '''Adding verification for failed login'''
         alert_text = Utility.handle_alert(driver, action='accept')
-        assert "User does not exist." in alert_text
-        driver.refresh()
+        try:
+            assert "User does not exist." in alert_text, f"User does not exist.' in alert text, but got '{alert_text}'"
+        except AssertionError as e:
+            print(f"Assertion failed: {e}")
+            raise
         self.message_logging("successfully verified by providing invalid username")
 
     '''login with wrong password'''
@@ -66,8 +57,11 @@ class TestLogin(Utility):
         login_page.login(USER_DATA["valid"]["username"], USER_DATA["invalid"]["password"])
         '''Adding verification for failed login'''
         alert_text = Utility.handle_alert(driver, action='accept')
-        assert "Wrong password." in alert_text
-        driver.refresh()
+        try:
+            assert "Wrong password." in alert_text, f"Expected 'Wrong password.' in alert text, but got '{alert_text}'"
+        except AssertionError as e:
+            print(f"Assertion failed: {e}")
+            raise
         self.message_logging("successfully verified by providing invalid password")
 
     '''login with empty username'''
@@ -78,8 +72,11 @@ class TestLogin(Utility):
         login_page.login("", USER_DATA["valid"]["password"])
         '''Adding verification for failed login'''
         alert_text = Utility.handle_alert(driver, action='accept')
-        assert "Please fill out Username and Password." in alert_text
-        driver.refresh()
+        try:
+            assert "Please fill out Username and Password." in alert_text, f"Expected 'Please fill out Username and Password.' in alert text, but got '{alert_text}'"
+        except AssertionError as e:
+            print(f"Assertion failed: {e}")
+            raise
         self.message_logging("successfully verified by providing empty username")
 
     '''login with empty password'''
@@ -90,9 +87,13 @@ class TestLogin(Utility):
         login_page.login(USER_DATA["valid"]["username"], "")
         '''Adding verification for failed login'''
         alert_text = Utility.handle_alert(driver, action='accept')
-        assert "Please fill out Username and Password." in alert_text
-        driver.refresh()
+        try:
+            assert "Please fill out Username and Password." in alert_text, f"Expected 'Please fill out Username and Password.' in alert text, but got '{alert_text}'"
+        except AssertionError as e:
+            print(f"Assertion failed: {e}")
+            raise
         self.message_logging("successfully verified by providing empty password")
+        driver.refresh()
 
     '''login with empty fields'''
     def test_empty_username_password(self, driver):
@@ -102,5 +103,9 @@ class TestLogin(Utility):
         login_page.login("", "")
         '''Adding verification for failed login'''
         alert_text = Utility.handle_alert(driver, action='accept')
-        assert "Please fill out Username and Password." in alert_text
+        try:
+            assert "Please fill out Username and Password." in alert_text, f"Expected 'Please fill out Username and Password.' in alert text, but got '{alert_text}'"
+        except AssertionError as e:
+            print(f"Assertion failed: {e}")
+            raise
         self.message_logging("successfully verified by providing empty fields")
