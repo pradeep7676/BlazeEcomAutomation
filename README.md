@@ -7,7 +7,7 @@
 
 2. Setup WebDriver for your browser (e.g., Chrome).
 
-## Running Tests using below command and reports will generate automatically and if u want run specific browser u have to pass as comman
+## Running Tests using below command and reports will generate automatically and if u want run specific browser u have to pass as cmd
 python run_tests.py  #defaults chrome browser 
 python run_tests.py firefox  #in fire testcase will run
 

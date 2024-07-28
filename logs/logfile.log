@@ -24,3 +24,183 @@
  2024-07-27 20:28:30,963 : INFO : test_checkout_with_name_and_card : successfully verified checkout page with name and card
  2024-07-27 20:29:04,277 : INFO : test_checkout_with_empty_cart : successfully verified checkout with empty cart
  2024-07-27 20:29:27,431 : INFO : test_logout : successfully verified with empty username and password fields
+ 2024-07-28 08:07:05,536 : INFO : test_logout : successfully verified with empty username and password fields
+ 2024-07-28 08:09:33,329 : INFO : test_login_with_valid_username_password : successfully login and verified the username
+ 2024-07-28 08:09:36,355 : INFO : test_login_with_wrong_username_password : successfully verified by providing wrong username and password
+ 2024-07-28 08:09:39,545 : INFO : test_login_with_wrong_username : successfully verified by providing wrong username
+ 2024-07-28 08:09:43,699 : INFO : test_login_with_wrong_password : successfully verified by providing wrong password
+ 2024-07-28 08:09:46,002 : INFO : test_empty_username : successfully verified by providing empty fields
+ 2024-07-28 08:11:36,113 : INFO : test_login_with_valid_username_password : successfully login and verified the username
+ 2024-07-28 08:11:38,109 : INFO : test_login_with_wrong_username_password : successfully verified by providing wrong username and password
+ 2024-07-28 08:11:42,115 : INFO : test_login_with_wrong_username : successfully verified by providing wrong username
+ 2024-07-28 08:11:44,481 : INFO : test_login_with_wrong_password : successfully verified by providing wrong password
+ 2024-07-28 08:11:46,286 : INFO : test_empty_username : successfully verified by providing empty fields
+ 2024-07-28 08:11:49,283 : INFO : test_empty_password : successfully verified by providing empty fields
+ 2024-07-28 08:11:51,134 : INFO : test_login_with_empty_fields : successfully verified by providing empty fields
+ 2024-07-28 08:19:23,033 : INFO : test_valid_login : successfully login and verified the username
+ 2024-07-28 08:19:25,183 : INFO : test_invalid_username_password : successfully verified by providing wrong username and password
+ 2024-07-28 08:19:28,206 : INFO : test_invalid_username : successfully verified by providing wrong username
+ 2024-07-28 08:19:31,171 : INFO : test_invalid_password : successfully verified by providing wrong password
+ 2024-07-28 08:19:33,433 : INFO : test_empty_username : successfully verified by providing empty username
+ 2024-07-28 08:19:35,973 : INFO : test_empty_password : successfully verified by providing empty password
+ 2024-07-28 08:19:37,116 : INFO : test_empty_username_password : successfully verified by providing empty fields
+ 2024-07-28 08:26:05,224 : INFO : test_valid_login : successfully login and verified the username
+ 2024-07-28 08:26:07,150 : INFO : test_invalid_username_password : successfully verified by providing wrong username and password
+ 2024-07-28 08:26:10,785 : INFO : test_invalid_username : successfully verified by providing wrong username
+ 2024-07-28 08:26:12,835 : INFO : test_invalid_password : successfully verified by providing wrong password
+ 2024-07-28 08:26:14,979 : INFO : test_empty_username : successfully verified by providing empty username
+ 2024-07-28 08:26:17,709 : INFO : test_empty_password : successfully verified by providing empty password
+ 2024-07-28 08:26:19,230 : INFO : test_empty_username_password : successfully verified by providing empty fields
+ 2024-07-28 08:44:11,293 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 08:44:14,942 : INFO : test_existing_username : successfully signup
+ 2024-07-28 08:44:16,890 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 08:44:19,321 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 08:44:21,445 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 09:09:52,892 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 09:09:55,856 : INFO : test_existing_username : successfully signup
+ 2024-07-28 09:09:58,416 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 09:10:00,707 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 09:10:02,635 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 09:12:00,334 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 09:12:02,793 : INFO : test_existing_username : successfully signup
+ 2024-07-28 09:12:04,217 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 09:12:07,247 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 09:12:09,203 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 09:27:39,282 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 09:27:42,396 : INFO : test_existing_username : successfully signup
+ 2024-07-28 09:27:44,546 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 09:27:47,263 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 09:27:49,297 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 09:29:45,014 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 09:29:47,516 : INFO : test_existing_username : successfully signup
+ 2024-07-28 09:29:49,054 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 09:29:51,297 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 09:29:53,006 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 09:40:35,971 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 09:40:39,214 : INFO : test_existing_username : successfully signup
+ 2024-07-28 09:40:41,794 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 09:40:43,849 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 09:40:45,731 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 09:40:51,795 : INFO : test_password_with_special_characters : successfully signup password special characters
+ 2024-07-28 09:42:04,905 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 09:42:07,794 : INFO : test_existing_username : successfully signup
+ 2024-07-28 09:42:09,554 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 09:42:11,209 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 09:42:12,969 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 09:42:17,768 : INFO : test_password_with_special_characters : successfully signup password special characters
+ 2024-07-28 09:58:26,579 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 09:58:29,951 : INFO : test_existing_username : successfully signup
+ 2024-07-28 09:58:32,435 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 09:58:34,345 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 09:58:35,736 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 09:58:40,457 : INFO : test_password_with_special_characters : successfully signup password special characters
+ 2024-07-28 10:04:40,777 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 10:04:43,263 : INFO : test_existing_username : successfully signup
+ 2024-07-28 10:04:44,766 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 10:04:47,443 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 10:04:49,310 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 10:04:54,349 : INFO : test_password_with_special_characters : successfully signup password special characters
+ 2024-07-28 10:06:35,443 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 10:06:38,096 : INFO : test_existing_username : successfully signup
+ 2024-07-28 10:06:40,064 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 10:06:41,918 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 10:06:43,347 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 10:08:01,763 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 10:08:05,074 : INFO : test_existing_username : successfully signup
+ 2024-07-28 10:08:07,267 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 10:08:09,363 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 10:08:11,484 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 10:30:21,118 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 10:31:24,128 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 10:31:26,584 : INFO : test_existing_username : successfully signup
+ 2024-07-28 10:31:28,030 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 10:31:30,728 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 10:31:32,171 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 10:39:35,818 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 10:39:38,287 : INFO : test_existing_username : successfully signup
+ 2024-07-28 10:39:39,680 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 10:39:42,163 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 10:39:43,870 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 10:39:46,579 : INFO : test_username_password_with_special_characters : successfully signup password special characters
+ 2024-07-28 10:51:38,722 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 10:51:41,105 : INFO : test_existing_username : successfully signup
+ 2024-07-28 10:51:43,185 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 10:51:45,314 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 10:51:46,915 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 10:51:49,731 : INFO : test_username_password_with_special_characters : successfully signup  with username and password special characters
+ 2024-07-28 10:52:10,091 : INFO : test_valid_login : successfully login and verified the username
+ 2024-07-28 10:52:29,359 : INFO : test_product_display : verified products correctly displayed
+ 2024-07-28 10:52:29,766 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 10:52:30,043 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 10:52:30,043 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 10:52:30,329 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 10:52:30,329 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 10:52:30,329 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 10:52:44,036 : INFO : test_add_product_to_cart : Navigate to the last page by clicking next
+ 2024-07-28 10:52:45,124 : INFO : test_add_product_to_cart : selecting the last product
+ 2024-07-28 10:52:45,124 : INFO : test_add_product_to_cart : selecting the last product
+ 2024-07-28 10:52:45,923 : INFO : test_add_product_to_cart : added the product to the cart
+ 2024-07-28 10:52:45,923 : INFO : test_add_product_to_cart : added the product to the cart
+ 2024-07-28 10:52:45,923 : INFO : test_add_product_to_cart : added the product to the cart
+ 2024-07-28 10:52:46,464 : INFO : test_add_product_to_cart : successfully added product to cart
+ 2024-07-28 10:52:46,464 : INFO : test_add_product_to_cart : successfully added product to cart
+ 2024-07-28 10:52:46,464 : INFO : test_add_product_to_cart : successfully added product to cart
+ 2024-07-28 10:52:46,464 : INFO : test_add_product_to_cart : successfully added product to cart
+ 2024-07-28 10:52:48,558 : INFO : test_verifying_item_in_cart : successfully verified that added product present in cart
+ 2024-07-28 10:53:05,102 : INFO : test_checkout_with_all_details : successfully verified checkout page with all fields
+ 2024-07-28 10:53:07,647 : INFO : test_checkout_empty_field : successfully verified checkout page with empty fields
+ 2024-07-28 10:53:10,682 : INFO : test_checkout_with_name_and_card : successfully verified checkout page with name and card
+ 2024-07-28 10:53:43,998 : INFO : test_checkout_with_empty_cart : successfully verified checkout with empty cart
+ 2024-07-28 10:54:13,791 : INFO : test_logout : successfully verified with empty username and password fields
+ 2024-07-28 11:08:49,192 : INFO : test_valid_login : successfully login and verified the username
+ 2024-07-28 11:08:52,923 : INFO : test_invalid_username_password : successfully verified by providing wrong username and password
+ 2024-07-28 11:08:55,530 : INFO : test_invalid_username : successfully verified by providing wrong username
+ 2024-07-28 11:08:57,845 : INFO : test_invalid_password : successfully verified by providing wrong password
+ 2024-07-28 11:08:59,974 : INFO : test_empty_username : successfully verified by providing empty username
+ 2024-07-28 11:09:02,910 : INFO : test_empty_password : successfully verified by providing empty password
+ 2024-07-28 11:09:04,462 : INFO : test_empty_username_password : successfully verified by providing empty fields
+ 2024-07-28 11:09:38,608 : INFO : test_valid_login : successfully login and verified the username
+ 2024-07-28 11:09:41,686 : INFO : test_invalid_username_password : successfully verified by providing wrong username and password
+ 2024-07-28 11:09:45,276 : INFO : test_invalid_username : successfully verified by providing wrong username
+ 2024-07-28 11:09:48,718 : INFO : test_invalid_password : successfully verified by providing wrong password
+ 2024-07-28 11:09:51,295 : INFO : test_empty_username : successfully verified by providing empty username
+ 2024-07-28 11:09:53,553 : INFO : test_empty_password : successfully verified by providing empty password
+ 2024-07-28 11:09:54,967 : INFO : test_empty_username_password : successfully verified by providing empty fields
+ 2024-07-28 11:15:05,651 : INFO : test_valid_signup : successfully signup with new username and password
+ 2024-07-28 11:15:09,564 : INFO : test_existing_username : successfully signup
+ 2024-07-28 11:15:12,323 : INFO : test_empty_username : successfully verified with empty username and password fields
+ 2024-07-28 11:15:14,472 : INFO : test_empty_password : successfully verified with empty username and password fields
+ 2024-07-28 11:15:16,030 : INFO : test_empty_fields : successfully verified with empty username and password fields
+ 2024-07-28 11:15:18,867 : INFO : test_username_password_with_special_characters : successfully signup  with username and password special characters
+ 2024-07-28 11:15:37,147 : INFO : test_valid_login : successfully login and verified the username
+ 2024-07-28 11:15:40,067 : INFO : test_invalid_username_password : successfully verified by providing invalid username and password
+ 2024-07-28 11:15:42,950 : INFO : test_invalid_username : successfully verified by providing invalid username
+ 2024-07-28 11:15:46,071 : INFO : test_invalid_password : successfully verified by providing invalid password
+ 2024-07-28 11:15:48,102 : INFO : test_empty_username : successfully verified by providing empty username
+ 2024-07-28 11:15:48,102 : INFO : test_empty_username : successfully verified by providing empty username
+ 2024-07-28 11:15:51,166 : INFO : test_empty_password : successfully verified by providing empty password
+ 2024-07-28 11:15:51,166 : INFO : test_empty_password : successfully verified by providing empty password
+ 2024-07-28 11:15:52,920 : INFO : test_empty_username_password : successfully verified by providing empty fields
+ 2024-07-28 11:16:06,851 : INFO : test_product_display : verified products correctly displayed
+ 2024-07-28 11:16:07,241 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 11:16:07,489 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 11:16:07,489 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 11:16:07,747 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 11:16:07,747 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 11:16:07,747 : INFO : test_product_categories : Verify that product categories can be navigated successfully.
+ 2024-07-28 11:16:18,113 : INFO : test_add_product_to_cart : Navigate to the last page by clicking next
+ 2024-07-28 11:16:19,787 : INFO : test_add_product_to_cart : selecting the last product
+ 2024-07-28 11:16:19,787 : INFO : test_add_product_to_cart : selecting the last product
+ 2024-07-28 11:16:20,548 : INFO : test_add_product_to_cart : added the product to the cart
+ 2024-07-28 11:16:20,548 : INFO : test_add_product_to_cart : added the product to the cart
+ 2024-07-28 11:16:20,548 : INFO : test_add_product_to_cart : added the product to the cart
+ 2024-07-28 11:16:21,580 : INFO : test_add_product_to_cart : successfully added product to cart
+ 2024-07-28 11:16:21,580 : INFO : test_add_product_to_cart : successfully added product to cart
+ 2024-07-28 11:16:21,580 : INFO : test_add_product_to_cart : successfully added product to cart
+ 2024-07-28 11:16:21,580 : INFO : test_add_product_to_cart : successfully added product to cart
+ 2024-07-28 11:16:23,577 : INFO : test_verifying_item_in_cart : successfully verified that added product present in cart
+ 2024-07-28 11:16:37,774 : INFO : test_checkout_with_all_details : successfully verified checkout page with all fields
+ 2024-07-28 11:16:39,998 : INFO : test_checkout_empty_field : successfully verified checkout page with empty fields
+ 2024-07-28 11:16:42,894 : INFO : test_checkout_with_name_and_card : successfully verified checkout page with name and card
+ 2024-07-28 11:17:15,310 : INFO : test_checkout_with_empty_cart : successfully verified checkout with empty cart
+ 2024-07-28 11:17:29,760 : INFO : test_logout : successfully verified with empty username and password fields

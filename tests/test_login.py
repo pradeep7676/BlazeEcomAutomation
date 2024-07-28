@@ -14,11 +14,11 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 @pytest.mark.usefixtures("driver")
 class TestLogin(Utility):
-    def test_login_with_valid_username_password(self, driver):
+    def test_valid_login(self, driver):
         home_page = HomePage(driver)
         home_page.go_to_login()
         login_page = LoginPage(driver)
-        login_page.login(USER_DATA["valid"]["username"], USER_DATA["valid"]["password"])
+        login_page.login(USER_DATA["existing"]["existing_username"], USER_DATA["existing"]["existing_password"])
         user_profile_locator = (By.XPATH, "//a[contains(text(), 'Welcome')]")
         try:
             '''Waiting for the user profile element to be visible'''
@@ -35,7 +35,7 @@ class TestLogin(Utility):
         self.message_logging("successfully login and verified the username")
 
     '''login with wrong username and password'''
-    def test_login_with_wrong_username_password(self, driver):
+    def test_invalid_username_password(self, driver):
         home_page = HomePage(driver)
         home_page.go_to_login()
         login_page = LoginPage(driver)
@@ -44,10 +44,10 @@ class TestLogin(Utility):
         alert_text = Utility.handle_alert(driver, action='accept')
         assert "User does not exist." in alert_text
         driver.refresh()
-        self.message_logging("successfully verified by providing wrong username and password")
+        self.message_logging("successfully verified by providing invalid username and password")
 
     '''login with wrong username'''
-    def test_login_with_wrong_username(self, driver):
+    def test_invalid_username(self, driver):
         home_page = HomePage(driver)
         home_page.go_to_login()
         login_page = LoginPage(driver)
@@ -56,10 +56,10 @@ class TestLogin(Utility):
         alert_text = Utility.handle_alert(driver, action='accept')
         assert "User does not exist." in alert_text
         driver.refresh()
-        self.message_logging("successfully verified by providing wrong username")
+        self.message_logging("successfully verified by providing invalid username")
 
     '''login with wrong password'''
-    def test_login_with_wrong_password(self, driver):
+    def test_invalid_password(self, driver):
         home_page = HomePage(driver)
         home_page.go_to_login()
         login_page = LoginPage(driver)
@@ -68,10 +68,34 @@ class TestLogin(Utility):
         alert_text = Utility.handle_alert(driver, action='accept')
         assert "Wrong password." in alert_text
         driver.refresh()
-        self.message_logging("successfully verified by providing wrong password")
+        self.message_logging("successfully verified by providing invalid password")
+
+    '''login with empty username'''
+    def test_empty_username(self, driver):
+        home_page = HomePage(driver)
+        home_page.go_to_login()
+        login_page = LoginPage(driver)
+        login_page.login("", USER_DATA["valid"]["password"])
+        '''Adding verification for failed login'''
+        alert_text = Utility.handle_alert(driver, action='accept')
+        assert "Please fill out Username and Password." in alert_text
+        driver.refresh()
+        self.message_logging("successfully verified by providing empty username")
+
+    '''login with empty password'''
+    def test_empty_password(self, driver):
+        home_page = HomePage(driver)
+        home_page.go_to_login()
+        login_page = LoginPage(driver)
+        login_page.login(USER_DATA["valid"]["username"], "")
+        '''Adding verification for failed login'''
+        alert_text = Utility.handle_alert(driver, action='accept')
+        assert "Please fill out Username and Password." in alert_text
+        driver.refresh()
+        self.message_logging("successfully verified by providing empty password")
 
     '''login with empty fields'''
-    def test_login_with_empty_fields(self, driver):
+    def test_empty_username_password(self, driver):
         home_page = HomePage(driver)
         home_page.go_to_login()
         login_page = LoginPage(driver)
