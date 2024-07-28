@@ -7,10 +7,9 @@ This project contains automated tests for the E-commerce website [DemoBlaze](htt
 - [Setup](#setup)
 - [Project Structure](#project-structure)
 - [Running Tests](#running-tests)
-- [Test Cases](#test-cases)
+- [Logs](#Logfile)
 - [Reports](#reports)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Setup
@@ -42,6 +41,9 @@ Ensure that the WebDriver executable is in your system's PATH or specify the pat
 
 To run the tests with the default browser (Chrome):
 python run_tests.py
+
+Logs
+Logs will be generated automatically in the logs folder. The log file (logfile.log) contains detailed information about the test execution, including debug and error messages, which can be helpful for troubleshooting and debugging.
 
 
 Specific Browser
