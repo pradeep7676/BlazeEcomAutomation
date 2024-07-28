@@ -42,13 +42,13 @@ Ensure that the WebDriver executable is in your system's PATH or specify the pat
 To run the tests with the default browser (Chrome):
 python run_tests.py
 
-Logs
-Logs will be generated automatically in the logs folder. The log file (logfile.log) contains detailed information about the test execution, including debug and error messages, which can be helpful for troubleshooting and debugging.
-
 
 Specific Browser
 To run the tests with a specific browser (e.g., Firefox):
 python run_tests.py firefox
+
+Logs
+Logs will be generated automatically in the logs folder. The log file (logfile.log) contains detailed information about the test execution, including debug and error messages, which can be helpful for troubleshooting and debugging.
 
 Reports
 Test reports will be generated automatically in the reports folder. The reports are in HTML format and provide a detailed overview of the test results.
